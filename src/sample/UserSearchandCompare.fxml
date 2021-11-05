@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="665.0" prefWidth="771.0" style="-fx-background-color: #dfeeea;"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.searchnCompareCONTROLLER">
+    <children>
+        <Button fx:id="exitButton" layoutX="712.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitButtonAction"
+                prefHeight="17.0" prefWidth="28.0" style="-fx-background-color: #e4efe7;" text="X" textFill="#2f5d62">
+            <font>
+                <Font name="System Bold" size="22.0"/>
+            </font>
+        </Button>
+        <ScrollPane layoutX="29.0" layoutY="179.0" prefHeight="472.0" prefWidth="574.0">
+            <content>
+                <Pane prefHeight="470.0" prefWidth="571.0" styleClass="befowardPane"
+                      stylesheets="@StyleSheets/UserCss.css">
+                    <children>
+                        <Pane fx:id="pane0" layoutX="25.0" layoutY="14.0" prefHeight="200.0" prefWidth="247.0"
+                              style="-fx-background-color: ffd8cc;"/>
+                        <TextField fx:id="carPrice0" layoutX="24.0" layoutY="313.0" prefHeight="25.0" prefWidth="246.0"
+                                   styleClass="textField"/>
+                        <TextField fx:id="carName0" layoutX="25.0" layoutY="252.0" prefHeight="25.0" prefWidth="245.0"
+                                   styleClass="textField"/>
+                        <Label layoutX="24.0" layoutY="235.0" prefHeight="17.0" prefWidth="224.0" styleClass="lebel"
+                               stylesheets="@StyleSheets/UserCss.css" text="Car Name">
+                            <font>
+                                <Font name="Arial" size="9.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="296.0" prefHeight="17.0" prefWidth="227.0" styleClass="lebel"
+                               stylesheets="@StyleSheets/UserCss.css" text="Car Price">
+                            <font>
+                                <Font name="Arial" size="9.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="carYear0" layoutX="24.0" layoutY="377.0" prefHeight="25.0" prefWidth="246.0"
+                                   styleClass="textField"/>
+                        <Label layoutX="24.0" layoutY="360.0" prefHeight="17.0" prefWidth="227.0" styleClass="lebel"
+                               stylesheets="@StyleSheets/UserCss.css" text="Car Year">
+                            <font>
+                                <Font name="Arial" size="9.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="carDealer0" layoutX="25.0" layoutY="431.0" prefHeight="25.0" prefWidth="246.0"
+                                   styleClass="textField"/>
+                        <Label layoutX="25.0" layoutY="414.0" prefHeight="17.0" prefWidth="227.0" styleClass="lebel"
+                               stylesheets="@StyleSheets/UserCss.css" text="Dealer">
+                            <font>
+                                <Font name="Arial" size="9.0"/>
+                            </font>
+                        </Label>
+                        <Pane fx:id="pane1" layoutX="303.0" layoutY="14.0" prefHeight="200.0" prefWidth="247.0"
+                              style="-fx-background-color: ffd8cc;"/>
+                        <TextField fx:id="carPrice1" layoutX="303.0" layoutY="313.0" prefHeight="25.0" prefWidth="246.0"
+                                   styleClass="textField"/>
+                        <TextField fx:id="carName1" layoutX="304.0" layoutY="252.0" prefHeight="25.0" prefWidth="245.0"
+                                   styleClass="textField"/>
+                        <Label layoutX="303.0" layoutY="235.0" prefHeight="17.0" prefWidth="224.0" styleClass="lebel"
+                               stylesheets="@StyleSheets/UserCss.css" text="Car Name">
+                            <font>
+                                <Font name="Arial" size="9.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="303.0" layoutY="296.0" prefHeight="17.0" prefWidth="227.0" styleClass="lebel"
+                               stylesheets="@StyleSheets/UserCss.css" text="Car Price">
+                            <font>
+                                <Font name="Arial" size="9.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="carYear1" layoutX="303.0" layoutY="377.0" prefHeight="25.0" prefWidth="246.0"
+                                   styleClass="textField"/>
+                        <Label layoutX="303.0" layoutY="360.0" prefHeight="17.0" prefWidth="227.0" styleClass="lebel"
+                               stylesheets="@StyleSheets/UserCss.css" text="Car Year">
+                            <font>
+                                <Font name="Arial" size="9.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="carDealer1" layoutX="304.0" layoutY="431.0" prefHeight="25.0"
+                                   prefWidth="246.0" styleClass="textField"/>
+                        <Label layoutX="304.0" layoutY="414.0" prefHeight="17.0" prefWidth="227.0" styleClass="lebel"
+                               stylesheets="@StyleSheets/UserCss.css" text="Dealer">
+                            <font>
+                                <Font name="Arial" size="9.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </content>
+        </ScrollPane>
+        <TextField fx:id="nameInput" layoutX="29.0" layoutY="76.0" prefHeight="25.0" prefWidth="419.0"/>
+        <Label layoutX="29.0" layoutY="52.0" prefHeight="17.0" prefWidth="259.0" text="Enter Car Name"/>
+        <Button fx:id="searchButton" layoutX="394.0" layoutY="120.0" mnemonicParsing="false"
+                onAction="#searchButtonAction" text="Search"/>
+        <Label fx:id="notificationBox" layoutX="29.0" layoutY="154.0" prefHeight="17.0" prefWidth="419.0"
+               textFill="#f83131"/>
+        <Button layoutX="561.0" layoutY="48.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="138.0"
+                text="Sort by year of make"/>
+        <Button layoutX="561.0" layoutY="101.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="138.0"
+                text="Sort by Price"/>
+        <ImageView fitHeight="79.0" fitWidth="45.0" layoutX="699.0" layoutY="136.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@Images"/>
+            </image>
+        </ImageView>
+        <Label layoutX="533.0" layoutY="146.0" prefHeight="17.0" prefWidth="149.0" text="Currency converted by">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

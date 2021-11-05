@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane id="Mainpane" prefHeight="647.0" prefWidth="723.0" stylesheets="@StyleSheets/viewAndManageUsersCss.css"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.DashboardController">
+    <children>
+        <Pane prefHeight="647.0" prefWidth="723.0" style="-fx-background-color: #e4efe7;">
+            <children>
+                <Button fx:id="exitButton" layoutX="678.0" mnemonicParsing="false" onAction="#setCancelButton"
+                        prefHeight="17.0" prefWidth="28.0" style="-fx-background-color: #e4efe7;" text="X"
+                        textFill="#564a4a">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="exportButton" alignment="CENTER" contentDisplay="CENTER" layoutX="542.0" layoutY="38.0"
+                        mnemonicParsing="false" onAction="#loadExportPage" prefHeight="28.0" prefWidth="117.0"
+                        styleClass="Button" stylesheets="@StyleSheets/viewAndManageUsersCss.css" text="Export "
+                        textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="14.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="displayUsersButton" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0"
+                        layoutY="38.0" mnemonicParsing="false" onAction="#displayUsersAction" prefHeight="28.0"
+                        prefWidth="117.0" styleClass="Button" stylesheets="@StyleSheets/viewAndManageUsersCss.css"
+                        text="Display Users " textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="14.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="addthroughCSV" alignment="CENTER" contentDisplay="CENTER" layoutX="336.0" layoutY="38.0"
+                        mnemonicParsing="false" onAction="#addthroughCSVACtion" prefHeight="28.0" prefWidth="172.0"
+                        styleClass="Button" stylesheets="@StyleSheets/viewAndManageUsersCss.css"
+                        text="Add User Through CSV" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="14.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="addUsersManually" alignment="CENTER" contentDisplay="CENTER" layoutX="164.0"
+                        layoutY="38.0" mnemonicParsing="false" onAction="#addUsersManuallyButton" prefHeight="28.0"
+                        prefWidth="148.0" styleClass="Button" stylesheets="@StyleSheets/viewAndManageUsersCss.css"
+                        text="Add User Manually " textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="14.0"/>
+                    </font>
+                </Button>
+                <StackPane fx:id="vMU_STACKPANE" layoutX="-2.0" layoutY="80.0" prefHeight="567.0" prefWidth="729.0">
+                    <children>
+                        <Label prefHeight="131.0" prefWidth="253.0" text=" ADMIN">
+                            <font>
+                                <Font name="Verdana Bold" size="48.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </StackPane>
+                <Separator layoutX="1.0" layoutY="78.0" prefHeight="0.0" prefWidth="723.0"
+                           style="-fx-background-color: rgb(86, 74, 74);"/>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

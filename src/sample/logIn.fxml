@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0"
+            prefWidth="885.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.LoginController">
+    <right>
+        <AnchorPane prefHeight="564.0" prefWidth="448.0" style="-fx-background-color: rgb(86, 74, 74);"
+                    BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="usernameField" layoutX="113.0" layoutY="216.0" prefHeight="25.0" prefWidth="223.0"
+                           promptText="Username" style="-fx-background-radius: 5px;">
+                    <font>
+                        <Font name="Verdana" size="12.0"/>
+                    </font>
+                </TextField>
+                <Button fx:id="logInButton" layoutX="188.0" layoutY="374.0" mnemonicParsing="false"
+                        onAction="#setLogInButton" prefHeight="25.0" prefWidth="77.0" styleClass="loginbutton"
+                        stylesheets="@StyleSheets/stylesheet.css" text="LOG IN" textFill="#564a4a">
+                    <font>
+                        <Font name="System Bold" size="16.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="cancelButton" layoutX="388.0" layoutY="7.0" mnemonicParsing="false"
+                        onAction="#setCancelButton" style="-fx-background-color: rgb(86, 74, 74);" text="X"
+                        textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Button>
+                <ImageView fitHeight="48.0" fitWidth="52.0" layoutX="198.0" layoutY="122.0">
+                    <image>
+                        <Image url="@Images/icons8_lock_127px_2.png"/>
+                    </image>
+                </ImageView>
+                <Label fx:id="errorpop" alignment="CENTER" contentDisplay="CENTER" layoutX="139.0" layoutY="345.0"
+                       prefHeight="19.0" prefWidth="175.0" textAlignment="CENTER" textFill="#f55c47">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Label>
+                <Label id="signUpButton" fx:id="signupbutton" layoutX="192.0" layoutY="501.0"
+                       onMouseClicked="#loadSignUpPage" prefHeight="18.0" prefWidth="241.0"
+                       stylesheets="@StyleSheets/stylesheet.css" text="Don't have an account ? Sign up"/>
+                <PasswordField fx:id="passwordField" layoutX="113.0" layoutY="299.0" prefHeight="25.0" prefWidth="226.0"
+                               promptText="Passowrd" style="-fx-background-radius: 5px;"/>
+                <Button fx:id="GOTOUSER" layoutX="339.0" layoutY="134.0" mnemonicParsing="false" onAction="#GOTOUSER"
+                        styleClass="loginbutton" stylesheets="@StyleSheets/stylesheet.css" text="JUMP"/>
+            </children>
+        </AnchorPane>
+    </right>
+    <left>
+        <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="438.0"
+                    style="-fx-background-color: f55c47;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="127.0" fitWidth="127.0" layoutX="130.0" layoutY="155.0">
+                    <image>
+                        <Image url="@Images/icons8_crowdfunding_127pxGray.png"/>
+                    </image>
+                </ImageView>
+                <Label layoutX="97.0" layoutY="282.0" prefHeight="50.0" prefWidth="211.0" text="Mazuma"
+                       textFill="#564a4a">
+                    <font>
+                        <Font name="Segoe UI Black" size="48.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>

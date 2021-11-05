@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="665.0" prefWidth="771.0" style="-fx-background-color: #dfeeea;"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.userHomeController">
+    <children>
+        <Button fx:id="exitButton" layoutX="712.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitButtonAction"
+                prefHeight="17.0" prefWidth="28.0" style="-fx-background-color: #e4efe7;" text="X" textFill="#2f5d62">
+            <font>
+                <Font name="System Bold" size="22.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

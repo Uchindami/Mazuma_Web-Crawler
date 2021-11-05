@@ -1,0 +1,15 @@
+.lebel{
+    -fx-background-color: #dfeeea;
+    -fx-font-family: Verdana;
+    -fx-font-size: 10px;
+    
+}
+.befowardPane{
+    -fx-background-color:  #dfeeea;
+}
+
+.titleLabel{
+    -fx-text-fill:#2f5d62;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -fx-font-size: 20px;
+}

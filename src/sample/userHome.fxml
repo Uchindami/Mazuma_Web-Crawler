@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="anchor" prefHeight="662.0" prefWidth="1067.0" style="-fx-background-color: #dfeeea;"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.userHomeController">
+    <children>
+        <VBox layoutY="-4.0" prefHeight="669.0" prefWidth="296.0" style="-fx-background-color: #2f5d62;">
+            <children>
+                <Pane prefHeight="82.0" prefWidth="296.0">
+                    <children>
+                        <Label layoutX="79.0" prefHeight="81.0" prefWidth="217.0" text="Mazuma" textFill="#dfeeea">
+                            <font>
+                                <Font name="Verdana Bold" size="37.0"/>
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="73.0" fitWidth="72.0" layoutX="6.0" layoutY="8.0">
+                            <image>
+                                <Image url="@Images/icons8_crowdfunding_127px_1.png"/>
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Separator prefHeight="0.0" prefWidth="296.0" style="-fx-background-color: #dfeeea;"/>
+                <Label fx:id="username" prefHeight="42.0" prefWidth="296.0" text="User" textFill="#dfeeea">
+                    <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="38.0">
+                            <image>
+                                <Image url="@Images/icons8_male_user_127px_1.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="20.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font name="Verdana" size="18.0"/>
+                    </font>
+                    <padding>
+                        <Insets left="10.0"/>
+                    </padding>
+                </Label>
+                <Separator prefWidth="200.0" style="-fx-background-color: #dfeeea;">
+                    <VBox.margin>
+                        <Insets top="15.0"/>
+                    </VBox.margin>
+                </Separator>
+                <Label fx:id="newArrivalsButton" onMouseClicked="#loadViewScene" prefHeight="75.0" prefWidth="296.0"
+                       text="   View New Arrivals " textFill="#dfeeea">
+                    <VBox.margin>
+                        <Insets left="17.0" right="10.0" top="35.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="19.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@Images/icons8_grid_view_30px.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+                <Label fx:id="searchButton" onMouseClicked="#loadSearchScene" prefHeight="75.0" prefWidth="264.0"
+                       text="   Search and Compare " textFill="#dfeeea">
+                    <VBox.margin>
+                        <Insets left="15.0" right="10.0" top="30.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="19.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@Images/icons8_search_30px.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+                <Label fx:id="settingsButton" onMouseClicked="#loadSettingsScene" prefHeight="75.0" prefWidth="296.0"
+                       text="   User Settings " textFill="#dfeeea">
+                    <VBox.margin>
+                        <Insets left="15.0" right="10.0" top="30.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="19.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@Images/icons8_gears_30px.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+                <Label prefHeight="17.0" prefWidth="299.0"
+                       text="Mazuma and its subcomponents are a subdivision of Ulendo 2021 -2022" textFill="#dfeeea">
+                    <VBox.margin>
+                        <Insets top="170.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font name="Segoe UI" size="9.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <Pane fx:id="carpane" layoutX="308.0" layoutY="279.0" prefHeight="131.0" prefWidth="149.0"/>
+        <StackPane fx:id="sceneSwitch" layoutX="296.0" prefHeight="665.0" prefWidth="771.0"
+                   style="-fx-background-color: #dfeeea;"/>
+    </children>
+</AnchorPane>

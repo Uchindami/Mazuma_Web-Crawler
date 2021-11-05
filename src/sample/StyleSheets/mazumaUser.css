@@ -1,0 +1,11 @@
+.buttons{
+    -fx-background-color:   #2f5d62;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+   -fx-font-size: 14px;
+   -fx-text-fill:   #dfeeea;
+   -fx-padding: 0px;
+   -fx-margin: 0;
+}
+.button:hover{
+    -fx-background-color :#5e8b7e ;
+}

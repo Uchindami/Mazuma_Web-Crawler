@@ -1,0 +1,68 @@
+
+1. id
+2. username
+3. phone number
+4. location 
+
+login/sign up colours
+brown-black
+ rgb(86, 74, 74)
+#564a4a
+kaya reddish corol
+ f55c47
+
+Adminpage colours
+white green 
+#e4efe7
+
+Car websites Used
+autocj
+https://www.beforward.jp/
+https://autocj.co.jp/spn/used_cars?log=1&cnt=&maker=&sort=price&gclid=Cj0KCQjw5PGFBhC2ARIsAIFIMNewmlL1sgdRmyknhali-jWNFuBipTvXlq5HICf4pPNieHXwsUOC9lUaAt8VEALw_wcB
+<ul class="top-seller-ranking">
+
+    public void fetchButtonAction(ActionEvent actionEvent) {
+        try {
+            Document doc = Jsoup.connect(url).get();
+            switch (web){
+                case "bf":
+                    for(int i = 0; i<=0 ;i++) {
+                        Elements vehicleBox = doc.getElementsByClass("fn-top-display-lists-top-lateststock-list top-display-lists-top-lateststock-list");
+                        Elements vehicleDetails = vehicleBox.first().getElementsByClass("item"+i+"");
+
+
+                        //get the image
+                        String pictureUrl = vehicleDetails.first().getElementsByTag("img").attr("src");
+                        System.out.println(pictureUrl);
+
+                        //get the price
+                        Elements vehiclePrice = vehicleDetails.first().getElementsByClass("top-fob-price");
+
+                        //get the name
+                        Elements vehicleName = vehicleDetails.first().getElementsByTag("h3");
+
+                        //System.out.println(vehicleName.text() + " " + vehiclePrice.text());
+                        Image  hold = new Image("https:"+pictureUrl,149,131,false,false);
+
+                        //pass the values to the interface
+                        carImage0 = new ImageView(hold);
+                        carpane.getChildren().add(carImage0);
+
+                        carprice0.setText(vehiclePrice.text());
+                        carname0.setText(vehicleName.text());
+                    }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+/*    public void exitButtonAction(ActionEvent actionEvent) {
+        Stage stage = (Stage) exitButton.getScene().getWindow();
+        stage.close();
+    }*/
+
+https://www.beforward.jp/stocklist/make=/model=/mfg_year_from=/mfg_year_to=/showmore=/veh_type=/steering=/sortkey=n/keyword="+keyword+"/kmode=and/
+https://www.beforward.jp/stocklist/client_wishes_id=/description=/make=/model=/fuel=/fob_price_from=/fob_price_to=/veh_type=/steering=/mission=/mfg_year_from=/mfg_year_to=/mileage_from=/mileage_to=/cc_from=/cc_to=/showmore=/drive_type=/color=/stock_country=/area=/seats_from=/seats_to=/max_load_min=/max_load_max=/veh_type_sub=/view_cnt=100/page=1/sortkey=n/sar=/from_stocklist=1/keyword=passo/kmode=and/
+https://www.beforward.jp/stocklist/client_wishes_id=/description=/make=/model=/fuel=/fob_price_from=/fob_price_to=/veh_type=/steering=/mission=/mfg_year_from=/mfg_year_to=/mileage_from=/mileage_to=/cc_from=/cc_to=/showmore=/drive_type=/color=/stock_country=/area=/seats_from=/seats_to=/max_load_min=/max_load_max=/veh_type_sub=/view_cnt=1000/page=1/sortkey=a/sar=/from_stocklist=1/keyword=passo/kmode=and/

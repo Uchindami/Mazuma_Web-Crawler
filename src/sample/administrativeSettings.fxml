@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane id="Mainpane" prefHeight="647.0" prefWidth="723.0" stylesheets="@StyleSheets/administrativeSettingsCss.css"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.DashboardController">
+    <children>
+        <Label layoutX="14.0" layoutY="26.0" prefHeight="17.0" prefWidth="191.0" text="Admin Page" textFill="WHITE"/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+#Mainpane{
+    -fx-background-color: #f8eded;
+}
+.Button{
+    -fx-background-color:  rgb(86, 74, 74);
+     -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #e4efe7;
+    -fx-padding: 0px;
+    -fx-margin: 0;
+}
+
+.Button:hover{
+    -fx-background-color : rgb(86, 54, 74)
+}
+
+.SmallButton{
+    -fx-background-color:  rgb(86, 74, 74);
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-font-size: 13px;
+    -fx-text-fill: #e4efe7;
+    -fx-padding: 0px;
+    -fx-margin: 0;
+}
+
+.SmallButton:hover{
+    -fx-background-color : rgb(86, 54, 74)
+}
+
+.Label{
+    -fx-padding: 0px;
+    -fx-margin: 0px;
+}
